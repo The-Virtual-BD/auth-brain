@@ -2,7 +2,7 @@ import React from "react";
 
 const Introduc = () => {
 	return (
-		<div className="introducing-bg flex items-center justify-center text-center text-primary">
+		<div className="introducing-bg flex items-center   text-primary px-6 lg:px-32">
 			<div className="flex flex-col gap-4 items-center justify-center text-center">
 				<h1 className="text-greenclr font-bold text-base uppercase ">
 					Introducing

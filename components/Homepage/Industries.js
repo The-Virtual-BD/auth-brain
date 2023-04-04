@@ -2,7 +2,7 @@ import React from "react";
 
 const Industries = () => {
 	return (
-		<div className="bg-primary h-[100vh] p-10">
+		<div className="bg-primary h-[100vh] p-10 px-6 lg:px-32">
 			<div className="flex flex-col gap-4 items-center justify-center text-center">
 				<h1 className="text-greenclr font-bold text-base uppercase ">
 					Industries

@@ -29,8 +29,8 @@ const Header = () => {
 	);
 
 	return (
-		<div>
-			<header className="bg-darkBg text-white w-full px-6 lg:px-24 py-2 h-16 flex items-center justify-between  shadow-lg  fixed  z-50 ease-in duration-300">
+		<div className="">
+			<header className="bg-darkBg text-white w-full px-6 lg:px-32 py-2 h-16 flex items-center justify-between  shadow-lg  fixed  z-50 ease-in duration-300">
 				<button
 					onClick={() => setOpen(!open)}
 					className="block lg:hidden text-chardark"

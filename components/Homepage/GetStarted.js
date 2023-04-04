@@ -5,7 +5,7 @@ import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 const GetStarted = () => {
 	return (
-		<div className=" p-10 text-primary px-24 ">
+		<div className=" py-10 text-primary px-6 lg:px-32 ">
 			<h2 className=" introduce-title capitalize text-center">Get Started</h2>
 
 			<div className="grid grid-cols-1 lg:grid-cols-3 gap-10 my-10 ">

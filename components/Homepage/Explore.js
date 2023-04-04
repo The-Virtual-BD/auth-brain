@@ -4,7 +4,7 @@ import { exploreCard } from "../sharedPage/StaticData";
 
 const Explore = () => {
 	return (
-		<div className="bg-secdarkBg p-10  text-fontclr  px-20">
+		<div className="bg-secdarkBg py-10  text-fontclr  px-6 lg:px-32">
 			<div className="flex flex-col gap-2 items-center justify-center text-center">
 				<h1 className="text-greenclr font-bold text-base uppercase ">
 					explore
@@ -16,7 +16,7 @@ const Explore = () => {
 				</p>
 			</div>
 
-			<div className="flex items-center gap-5 my-10 ">
+			<div className="flex items-center gap-10 my-10 ">
 				{exploreCard.map((data) => (
 					<div key={data.id} class="wrapper">
 						<div class="card">
