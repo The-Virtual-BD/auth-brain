@@ -1,0 +1,37 @@
+[
+    {
+        "_id": 101,
+        "name": "INTRO White & Black",
+        "oldPrice": 1499,
+        "newPrice": 1099,
+        "img": "/assets/products/white.png"
+    },
+    {
+        "_id": 102,
+        "name": "INTRO Matte Blue",
+        "oldPrice": 1499,
+        "newPrice": 1099,
+        "img": "/assets/products/blue.png"
+    },
+    {
+        "_id": 103,
+        "name": "INTRO Gradient White",
+        "oldPrice": 1499,
+        "newPrice": 1099,
+        "img": "/assets/products/red.png"
+    },
+    {
+        "_id": 104,
+        "name": "INTRO Classic Silver",
+        "oldPrice": 1499,
+        "newPrice": 1099,
+        "img": "/assets/products/black.png"
+    },
+    {
+        "_id": 105,
+        "name": "INTRO Classic Golden",
+        "oldPrice": 1499,
+        "newPrice": 1199,
+        "img": "/assets/products/golden.png"
+    }
+]
