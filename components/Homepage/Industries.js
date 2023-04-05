@@ -14,7 +14,7 @@ import { industriesData, slideData } from "../sharedPage/StaticData";
 
 const Industries = () => {
 	return (
-		<div className=" h-[100vh] p-10 px-6 lg:px-32 bg-primary">
+		<div className="h-auto lg:h-[100vh] p-10 px-6 lg:px-32 bg-primary">
 			<div className="flex flex-col gap-4 items-center justify-center text-center">
 				<h1 className="text-greenclr font-bold text-base uppercase ">
 					Industries
@@ -63,7 +63,7 @@ const IndustrySlide = ({ singleData }) => {
 				<h2 className="text-2xl font-bold text-start ">{title}</h2>
 				<div className="h-[3px] w-full bg-green-500"></div>
 			</div>
-			<div className="grid grid-cols-3 gap-5 w-full h-full mt-20">
+			<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full h-full mt-20">
 				<div>
 					<h2 className="text-xl font-bold mb-4">{feat1}</h2>
 					<p className="text-sm">{feat1Desc}</p>

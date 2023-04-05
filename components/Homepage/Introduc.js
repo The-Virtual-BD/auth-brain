@@ -13,7 +13,7 @@ const Introduc = () => {
 				</h2>
 				<div className="h-[3px] w-20 text-greenclr"></div>
 
-				<p className="text-paraclr text-base w-2/5">
+				<p className="text-paraclr text-base w-full lg:w-2/5">
 					AuthBrain has fundamentally reengineered distributed ledger
 					technology, enabling secure exchange of both value and data, without
 					any fees.

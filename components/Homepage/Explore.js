@@ -16,23 +16,24 @@ const Explore = () => {
 				</p>
 			</div>
 
-			<div className="flex items-center gap-10 my-10 ">
-				{exploreCard.map((data) => (
-					<div key={data.id} class="wrapper">
-						<div class="card">
-							<img src={data.img} alt={data.name} />
-							<div>
-								<h2 className="text-2xl font-bold">Hello</h2>
-								<div class="info">
-									<h1 className="font-bold text-2xl">{data.name} </h1>
-									<p className="text-sm mb-3">{data.desc} </p>
-									<button className="text-greenclr">Learn More</button>
-								</div>
+			<section>
+				<div class="grid grid-cols-1 lg:grid-cols-3 gap-10 my-10">
+					{exploreCard.map((cardData) => (
+						<div
+							class={`card`}
+							style={{ backgroundImage: `url(${cardData.img})` }}
+							key={cardData.id}
+						>
+							<div class="content">
+								<h2 class="title uppercase">{cardData.name}</h2>
+								<p class="copy">{cardData.desc}</p>
+
+								<button class="btn">Learn More</button>
 							</div>
 						</div>
-					</div>
-				))}
-			</div>
+					))}
+				</div>
+			</section>
 
 			<div className="text-center">
 				<button className="view-explorer-btn">VIEW ALL DEPARTMENTS</button>

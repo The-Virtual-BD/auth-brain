@@ -30,7 +30,7 @@ const Header = () => {
 
 	return (
 		<div className="">
-			<header className="bg-darkBg text-white w-full px-6 lg:px-32 py-2 h-16 flex items-center justify-between  shadow-lg  fixed  z-50 ease-in duration-300">
+			<header className="bg-darkBg opacity-75  w-full px-6 lg:px-32 py-2 h-16 flex items-center justify-between  shadow-lg  fixed  z-50 ease-in duration-300">
 				<button
 					onClick={() => setOpen(!open)}
 					className="block lg:hidden text-chardark"
@@ -49,7 +49,7 @@ const Header = () => {
                         height={40}
                         alt="logo"
                     /> */}
-					<h2 className="text-2xl font-bold "> AuthBrain</h2>
+					<h2 className="text-2xl font-bold text-white"> AuthBrain</h2>
 				</Link>
 
 				<ul className="hidden  lg:flex lg:flex-row justify-between items-center gap-10 text-lg ">
@@ -58,7 +58,7 @@ const Header = () => {
 			</header>
 
 			{open ? (
-				<div className="bg-mainBg text-fontclr  rounded w-full  pl-5  py-7 z-10 fixed">
+				<div className="bg-darkBg text-white rounded w-full  pl-5  py-7 z-10 fixed">
 					<ul
 						className=" lg:hidden flex flex-col items-start gap-5 pt-20 px-5"
 						onClick={() => setOpen(!open)}
