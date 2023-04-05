@@ -198,7 +198,6 @@
 	border: none;
 	border-radius: 8px;
 	/* background: linear-gradient(127.15deg, #1bb55c 36.78%, #6ecb95 96.74%); */
-	
 }
 .btn:hover {
 	/* text-decoration: underline;	 */
@@ -276,4 +275,30 @@
 	border: 1px solid #1bb55c;
 	color: #1bb55c;
 	background: white;
+}
+
+/* Footer */
+video {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.video-wrapper {
+	border: 2px solid #000;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header {
+	position: relative;
+	color: white;
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }

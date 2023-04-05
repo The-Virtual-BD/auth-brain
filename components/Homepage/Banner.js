@@ -1,4 +1,4 @@
-import React,{ useRef,} from "react";
+import React, { useRef } from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,18 +11,21 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper";
 import { slideData } from "../sharedPage/StaticData";
 
-
-
 const Banner = () => {
 	return (
-		<div  className="banner-bg text-fontclr  pt-5 pb-5 flex items-center justify-center ">
+		<div className="video-wrapper text-fontclr  pt-5 pb-5 flex items-center justify-center ">
+			<video autoPlay muted loop>
+				<source src="/assets/banner-video.mp4" type="video/mp4" />
+				Your browser does not support the video tag.
+			</video>
+
 			<div className="flex items-center justify-center w-5/6">
 				<Swiper
 					loop={true}
 					// grabCursor={true}
-                    navigation={true}
+					navigation={true}
 					autoplay={{
-						delay: 2500,
+						delay: 3500,
 						disableOnInteraction: true,
 					}}
 					slidesPerView={1}
@@ -31,7 +34,7 @@ const Banner = () => {
 					className="mySwiper"
 				>
 					{slideData.map((singleData) => (
-						<SwiperSlide key={singleData.id} >
+						<SwiperSlide key={singleData.id}>
 							<BannerSlide singleData={singleData} />
 						</SwiperSlide>
 					))}
@@ -48,8 +51,8 @@ const BannerSlide = ({ singleData }) => {
 	return (
 		<div className="flex flex-col gap-5">
 			<h2 className="text-4xl lg:text-6xl font-bold text-start">{title}</h2>
-            <div className="h-[3px] w-36 bg-green-500"></div>
-            <p className="text-start w-[400px]">{desc}</p>
+			<div className="h-[3px] w-36 bg-green-500"></div>
+			<p className="text-start w-[400px]">{desc}</p>
 		</div>
 	);
 };
