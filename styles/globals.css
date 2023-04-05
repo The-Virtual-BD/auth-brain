@@ -155,7 +155,9 @@ video {
 /* introducing */
 
 .introducing-bg {
-	background: url("/assets/Introducing.png") no-repeat center;
+	background: url("/assets/Introducing.png") ;
+	background-position: center;
+	background-size: cover;
 	height: 100vh;
 }
 .introduce-title {
