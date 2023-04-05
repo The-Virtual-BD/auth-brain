@@ -19,16 +19,11 @@ export const slideData = [
 export const exploreCard = [
 	{
 		id: 1,
-		name: "Web Development",
+		name: "Products",
 		desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus maxime perspiciatis aliquid",
 		img: "/assets/webdev.jpg",
 	},
-	{
-		id: 2,
-		name: "Graphic Design",
-		desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus maxime perspiciatis aliquid",
-		img: "/assets/explorer2.png",
-	},
+	
 	{
 		id: 3,
 		name: "Research ",

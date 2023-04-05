@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-
 const Header = () => {
 	const [open, setOpen] = useState(false);
 
@@ -52,9 +51,11 @@ const Header = () => {
 					<h2 className="text-2xl font-bold text-white"> AuthBrain</h2>
 				</Link>
 
-				<ul className="hidden  lg:flex lg:flex-row justify-between items-center gap-10 text-lg ">
-					{memuItems}
-				</ul>
+				<nav class="stroke">
+					<ul className="hidden  lg:flex lg:flex-row justify-between items-center gap-10 text-lg ">
+						{memuItems}
+					</ul>
+				</nav>
 			</header>
 
 			{open ? (

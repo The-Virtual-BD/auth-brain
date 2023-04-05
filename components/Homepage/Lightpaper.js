@@ -8,7 +8,9 @@ const Lightpaper = () => {
 				<h1 className="text-greenclr font-bold text-base uppercase mb-3">
 					Introducing
 				</h1>
-				<h2 className=" introduce-title capitalize mb-4">authbrain Lightpaper</h2>
+				<h2 className=" introduce-title capitalize mb-4">
+					authbrain Lightpaper
+				</h2>
 				<p className="text-fontclr text-sm mb-3">
 					Increasingly, companies and startups are integrating distributed
 					ledger technology (DLT) into their business. The AUTHBRAIN Lightpaper
@@ -21,11 +23,16 @@ const Lightpaper = () => {
 					DLT enables new business models and cutting-edge innovation – and how
 					you could use it:
 				</p>
-				<button className="main-btn">EXPLORE</button>
+				<button className="animated-btn">EXPLORE</button>
 			</div>
 
 			<div className="w-full lg:w-1/2">
-				<Image src={"/assets/lightpaper.png"} alt="lightpaper" width={640} height={400}/>
+				<Image
+					src={"/assets/lightpaper.png"}
+					alt="lightpaper"
+					width={640}
+					height={400}
+				/>
 			</div>
 		</div>
 	);

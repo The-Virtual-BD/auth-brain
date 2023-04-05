@@ -19,7 +19,7 @@ const Introduc = () => {
 					any fees.
 				</p>
 
-				<button className="main-btn">LEARN ABOUT AUTHBRAIN</button>
+				<button className="animated-btn">LEARN ABOUT AUTHBRAIN</button>
 			</div>
 		</div>
 	);

@@ -10,76 +10,158 @@
 	font-family: "Montserrat", sans-serif;
 }
 
-/* Main BTN */
+/* All Button */
 
-.main-btn {
+.animated-btn {
+	font-size: 16px;
 	background: linear-gradient(127.15deg, #1bb55c 36.78%, #6ecb95 96.74%);
 	border-radius: 8px;
+	font-weight: 500;
+	color: #fff;
+	border: 1px solid #1bb55c;
 	padding: 14px 20px 14px 20px;
-	font-weight: 700;
-	color: white;
-	transition: 0.3s all linear;
-	border: 1px solid #1bb55c;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
 }
-.main-btn:hover {
-	border: 1px solid #1bb55c;
+.animated-btn:hover {
 	color: #1bb55c;
-	background: transparent;
+}
+.animated-btn::after {
+	content: "";
+	background: #fff;
+	position: absolute;
+	z-index: -1;
+	padding: 14px 20px 14px 20px;
+	display: block;
+	transition: all 0.5s ease;
+	left: -20%;
+	right: -20%;
+	top: 0;
+	bottom: 0;
+	transform: skewX(-45deg) scale(0, 1);
+}
+
+.animated-btn:hover::after {
+	transform: skewX(-45deg) scale(1, 1);
 }
 
 .view-details-btn {
 	background: transparent;
 	border-radius: 8px;
 	padding: 12px 30px 12px 30px;
-	font-weight: 700;
+	font-weight: 600;
 	color: #111827;
-	transition: 0.3s all linear;
 	border: 1px solid #111827;
+	transition: 0.1s all linear;
 }
+.view-details-btn:hover {
+	color:white ;
+	border: 1px solid white;
+	background: #111827;
+}
+
 .view-explorer-btn {
 	background: transparent;
 	border-radius: 8px;
 	padding: 12px 30px 12px 30px;
 	font-weight: 700;
 	color: white;
-	transition: 0.3s all linear;
+	transition: 0.1s all linear;
 	border: 1px solid white;
 }
-.view-details-btn:hover,
 .view-explorer-btn:hover {
-	border: 1px solid #1bb55c;
-	color: white;
-	background: linear-gradient(127.15deg, #1bb55c 36.78%, #6ecb95 96.74%);
+	color:#111827 ;
+	border: 1px solid #111827;
+	background: white;
+	
 }
 
-/* Home Page */
+/*-------------------------
+		Home Page
+------------------------- */
 
+/* Navigation */
+
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+
+nav ul li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 600;
+	/* text-transform: uppercase; */
+	/* margin: 0 10px; */
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+	transition: all 0.5s;
+}
+nav ul li a:hover {
+	color: #ffffff;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+	position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: ".";
+	color: transparent;
+	background: #1bb55c;
+	height: 2px;
+}
+nav.stroke ul li a:hover:after {
+	width: 100%;
+}
+
+/* Banner */
 .banner-bg {
 	background: url("/assets/Banner.png") no-repeat center;
 	height: 100vh;
 }
+video {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.video-wrapper {
+	border: 2px solid #000;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* introducing */
+
 .introducing-bg {
 	background: url("/assets/Introducing.png") no-repeat center;
 	height: 100vh;
 }
-
 .introduce-title {
 	font-size: 35px;
 	font-weight: 700;
 	line-height: 40px;
-}
-
-.image-container {
-	width: 100%;
-	height: 65vh;
-	position: relative;
-}
-
-.image-container .image {
-	width: 100%;
-	height: 100%;
-	position: relative !important;
-	object-fit: cover;
 }
 
 /* Swiper */
@@ -90,9 +172,6 @@
 
 .swiper-slide {
 	text-align: center;
-	/* font-size: 18px; */
-
-	/* Center slide text vertically */
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -110,6 +189,49 @@
 .swiper-slide img {
 	display: block;
 	object-fit: cover;
+}
+
+/* .image-container {
+	width: 100%;
+	height: 65vh;
+	position: relative;
+}
+
+.image-container .image {
+	width: 100%;
+	height: 100%;
+	position: relative !important;
+	object-fit: cover;
+} */
+
+/* Get Started */
+
+.started-card {
+	background: #f3f4f6;
+	border: 2px solid #1bb55c;
+	color: #1f2937;
+	transition: 0.3s all linear;
+}
+.started-card:hover {
+	background: linear-gradient(127.15deg, #1bb55c 36.78%, #6ecb95 96.74%);
+	color: white;
+	transform: scale(1.05);
+}
+
+.started-card-btn {
+	background: linear-gradient(127.15deg, #1bb55c 36.78%, #6ecb95 96.74%);
+	border-radius: 8px;
+	padding: 14px 20px 14px 20px;
+	font-weight: 700;
+	color: white;
+	transition: 0.3s all linear;
+	border: 1px solid #1bb55c;
+}
+
+.started-card:hover .started-card-btn {
+	border: 1px solid #1bb55c;
+	color: #1bb55c;
+	background: white;
 }
 
 /* Explorer Card Design */
@@ -186,23 +308,7 @@
 	line-height: 25px;
 }
 
-.btn {
-	cursor: pointer;
-	margin-top: 1.5rem;
-	padding: 0.75rem 1.5rem;
-	font-size: 15px;
-	font-weight: 700;
-	transition: 0.2s all linear;
-	text-transform: uppercase;
-	color: #1bb55c;
-	border: none;
-	border-radius: 8px;
-	/* background: linear-gradient(127.15deg, #1bb55c 36.78%, #6ecb95 96.74%); */
-}
-.btn:hover {
-	/* text-decoration: underline;	 */
-	/* letter-spacing: 0.2rem; */
-}
+
 @media (hover: hover) and (min-width: 600px) {
 	.card:after {
 		transform: translateY(0);
@@ -247,58 +353,4 @@
 	}
 }
 
-/* Get Started */
-
-.started-card {
-	background: #f3f4f6;
-	border: 2px solid #1bb55c;
-	color: #1f2937;
-	transition: 0.3s all linear;
-}
-.started-card:hover {
-	background: #1bb55c;
-	color: white;
-	transform: scale(1.05);
-}
-
-.started-card-btn {
-	background: linear-gradient(127.15deg, #1bb55c 36.78%, #6ecb95 96.74%);
-	border-radius: 8px;
-	padding: 14px 20px 14px 20px;
-	font-weight: 700;
-	color: white;
-	transition: 0.3s all linear;
-	border: 1px solid #1bb55c;
-}
-
-.started-card:hover .started-card-btn {
-	border: 1px solid #1bb55c;
-	color: #1bb55c;
-	background: white;
-}
-
 /* Footer */
-video {
-	object-fit: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-.video-wrapper {
-	border: 2px solid #000;
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.header {
-	position: relative;
-	color: white;
-	text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
-}
