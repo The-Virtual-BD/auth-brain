@@ -19,7 +19,7 @@ const Banner = () => {
 				Your browser does not support the video tag.
 			</video>
 
-			<div className="flex items-center justify-center w-full lg:w-5/6 max-w-7xl mx-auto px-6 lg:px-32">
+			<div className="flex items-center justify-center  max-w-7xl mx-auto px-6 lg:px-32 w-full">
 				<Swiper
 					loop={true}
 					// grabCursor={true}

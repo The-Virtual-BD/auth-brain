@@ -252,7 +252,9 @@ video {
 	overflow: hidden;
 	padding: 1rem;
 	width: 100%;
+
 	min-height: 350px;
+	max-height: 400px;
 	text-align: center;
 	color: #fff;
 	background-color: #fff;
