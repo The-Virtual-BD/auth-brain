@@ -56,7 +56,7 @@
 	transition: 0.1s all linear;
 }
 .view-details-btn:hover {
-	color:white ;
+	color: white;
 	border: 1px solid white;
 	background: #111827;
 }
@@ -71,10 +71,9 @@
 	border: 1px solid white;
 }
 .view-explorer-btn:hover {
-	color:#111827 ;
+	color: #111827;
 	border: 1px solid #111827;
 	background: white;
-	
 }
 
 /*-------------------------
@@ -155,7 +154,7 @@ video {
 /* introducing */
 
 .introducing-bg {
-	background: url("/assets/Introducing.png") ;
+	background: url("/assets/Introducing.png");
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
@@ -192,6 +191,14 @@ video {
 	display: block;
 	object-fit: cover;
 }
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	color: white !important;
+	border: 2px solid white;
+	border-radius: 50% !important;
+	font-size: 16px !important;
+	padding: 10px;
+}
 
 /* .image-container {
 	width: 100%;
@@ -212,7 +219,7 @@ video {
 	background: #f3f4f6;
 	border: 2px solid #1bb55c;
 	color: #1f2937;
-	transition: 0.3s all linear;
+	transition: 0.3s all ease;
 }
 .started-card:hover {
 	background: linear-gradient(127.15deg, #1bb55c 36.78%, #6ecb95 96.74%);
@@ -226,7 +233,7 @@ video {
 	padding: 14px 20px 14px 20px;
 	font-weight: 700;
 	color: white;
-	transition: 0.3s all linear;
+	transition: 0.3s all ease;
 	border: 1px solid #1bb55c;
 }
 
@@ -309,7 +316,6 @@ video {
 	/* font-style: italic; */
 	line-height: 25px;
 }
-
 
 @media (hover: hover) and (min-width: 600px) {
 	.card:after {

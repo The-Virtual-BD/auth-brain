@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
+	const [navbarStyle, setNavbarStyle] = useState("opacity-100");
 
 	const memuItems = (
 		<>
@@ -27,17 +28,33 @@ const Header = () => {
 		</>
 	);
 
+	useEffect(() => {
+		function handleScroll() {
+			if (window.pageYOffset === 0) {
+				setNavbarStyle("opacity-100");
+			} else {
+				setNavbarStyle("opacity-75");
+			}
+		}
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
-		<div className="">
-			<header className="bg-darkBg opacity-75  w-full px-6 lg:px-32 py-2 h-16 flex items-center justify-between  shadow-lg  fixed  z-50 ease-in duration-300">
+		<div className={`bg-darkBg opacity-100  w-full   py-2 h-16   shadow-lg  fixed  z-50 ease-in duration-300 lg:${navbarStyle}`}>
+			<header className="flex items-center justify-between px-6 lg:px-32">
 				<button
 					onClick={() => setOpen(!open)}
-					className="block lg:hidden text-chardark"
+					className="block lg:hidden mt-2 lg:mt-0"
 				>
 					{!open ? (
-						<AiOutlineMenu className="text-4xl" />
+						<AiOutlineMenu className="text-3xl text-white" />
 					) : (
-						<AiOutlineClose className="text-4xl" />
+						<AiOutlineClose className="text-3xl text-white" />
 					)}
 				</button>
 
@@ -59,13 +76,15 @@ const Header = () => {
 			</header>
 
 			{open ? (
-				<div className="bg-darkBg text-white rounded w-full  pl-5  py-7 z-10 fixed">
-					<ul
-						className=" lg:hidden flex flex-col items-start gap-5 pt-20 px-5"
-						onClick={() => setOpen(!open)}
-					>
-						{memuItems}
-					</ul>
+				<div className="bg-darkBg  text-white rounded w-full  pl-5  py-5 z-10 fixed ">
+					<nav class="stroke">
+						<ul
+							className=" lg:hidden flex flex-col items-start  px-5 w-full"
+							onClick={() => setOpen(!open)}
+						>
+							{memuItems}
+						</ul>
+					</nav>
 				</div>
 			) : null}
 		</div>

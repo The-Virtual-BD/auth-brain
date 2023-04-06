@@ -52,7 +52,7 @@ const BannerSlide = ({ singleData }) => {
 		<div className="flex flex-col gap-5">
 			<h2 className="text-4xl lg:text-6xl font-bold text-start">{title}</h2>
 			<div className="h-[3px] w-36 bg-green-500"></div>
-			<p className="text-start w-[400px]">{desc}</p>
+			<p className="text-start w-[200px] lg:w-[400px] ml-5 lg:ml-0">{desc}</p>
 		</div>
 	);
 };
