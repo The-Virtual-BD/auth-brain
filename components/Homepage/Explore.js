@@ -4,9 +4,9 @@ import { exploreCard } from "../sharedPage/StaticData";
 
 const Explore = () => {
 	return (
-		<div className="bg-secdarkBg  py-10  text-fontclr  px-6 lg:px-32">
+		<div className="bg-secdarkBg  py-10  text-fontclr  px-6 lg:px-32 ">
 			<section>
-				<div class="grid grid-cols-1 lg:grid-cols-3 gap-10 my-10">
+				<div class="grid grid-cols-1 lg:grid-cols-3 gap-10 my-10 max-w-7xl mx-auto">
 					<div className="bg-white text-primary p-8 flex flex-col items-start justify-end rounded-md">
 						<h1 className="text-greenclr font-bold text-base uppercase ">
 							explore

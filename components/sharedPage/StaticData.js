@@ -111,7 +111,7 @@ export const industriesData = [
 		feat1: "Voice Recognition",
 		feat1Icon: <RiVoiceprintLine />,
 		feat1Desc:
-			"Vision recognition, also known as computer vision, is a subfield of artificial intelligence that focuses on enabling machines to interpret, analyze, and understand visual data from the world around them.",
+			"Voice recognition, also known as speech recognition, is the ability of a computer or machine to recognize and interpret spoken language or commands.",
 		feat2: "Brain Signal Recognition",
 		feat2Icon: <BiBrain />,
 		feat2Desc:
