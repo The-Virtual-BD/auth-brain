@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
-	const [navbarStyle, setNavbarStyle] = useState("opacity-100");
+	const [navbarTop, setNavbarTop] = useState(true);
 
 	const memuItems = (
 		<>
@@ -28,24 +28,24 @@ const Header = () => {
 		</>
 	);
 
-	useEffect(() => {
-		function handleScroll() {
+	/* 	useEffect(() => {
+		const handleScroll = () => {
 			if (window.pageYOffset === 0) {
-				setNavbarStyle("opacity-100");
+				setNavbarTop(true);
 			} else {
-				setNavbarStyle("opacity-75");
+				setNavbarTop(false);
 			}
-		}
-
+		};
 		window.addEventListener("scroll", handleScroll);
-
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
-	}, []);
+	}, []); */
 
 	return (
-		<div className={`bg-darkBg opacity-100  w-full px-6 lg:px-32 py-2 h-16   shadow-lg  fixed  z-50 ease-in duration-300 lg:${navbarStyle}`}>
+		<div
+			className={`bg-darkBg opacity-100 lg:opacity-75 w-full px-6 lg:px-32 py-2 h-16 shadow-lg fixed z-50 ease-in duration-300`}
+		>
 			<header className="flex items-center justify-between max-w-7xl mx-auto">
 				<button
 					onClick={() => setOpen(!open)}

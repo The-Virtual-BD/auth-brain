@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { exploreCard } from "../sharedPage/StaticData";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Explore = () => {
 	return (
@@ -19,8 +20,9 @@ const Explore = () => {
 							Foundation
 						</p>
 
-						<button class="text-green-500 capitalize font-bold ">
-							View all departments
+						<button class="text-green-500 capitalize font-bold flex items-center gap-1 tracking-normal hover:tracking-wide">
+							<span>View all departments</span>{" "}
+							<IoIosArrowForward className="font-bold " />
 						</button>
 					</div>
 
@@ -34,16 +36,19 @@ const Explore = () => {
 								<h2 class="title uppercase">{cardData.name}</h2>
 								<p class="copy">{cardData.desc}</p>
 
-								<button class="text-green-500">Learn More</button>
+								<button class="text-green-500 tracking-normal hover:tracking-wider flex items-center gap-1 ">
+									<span>Learn More</span>{" "}
+									<IoIosArrowForward className="font-bold " />
+								</button>
 							</div>
 						</div>
 					))}
 				</div>
 			</section>
 
-			<div className="text-center">
+			{/* <div className="text-center">
 				<button className="view-explorer-btn ">VIEW ALL DEPARTMENTS</button>
-			</div>
+			</div> */}
 		</div>
 	);
 };
