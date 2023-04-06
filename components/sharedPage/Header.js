@@ -46,7 +46,7 @@ const Header = () => {
 
 	return (
 		<div className={`bg-darkBg opacity-100  w-full   py-2 h-16   shadow-lg  fixed  z-50 ease-in duration-300 lg:${navbarStyle}`}>
-			<header className="flex items-center justify-between px-6 lg:px-32">
+			<header className="flex items-center justify-between max-w-7xl mx-auto">
 				<button
 					onClick={() => setOpen(!open)}
 					className="block lg:hidden mt-2 lg:mt-0"

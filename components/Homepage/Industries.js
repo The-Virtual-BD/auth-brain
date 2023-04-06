@@ -15,7 +15,7 @@ import { industriesData, slideData } from "../sharedPage/StaticData";
 const Industries = () => {
 	return (
 		<div className="h-auto lg:h-[100vh] p-10 px-6 lg:px-32 bg-primary">
-			<div className="flex flex-col gap-4 items-center justify-center text-center">
+			<div className="flex flex-col gap-4 items-center justify-center text-center max-w-7xl mx-auto">
 				<h1 className="text-greenclr font-bold text-base uppercase ">
 					Industries
 				</h1>
@@ -26,7 +26,7 @@ const Industries = () => {
 				{/* <div className="h-[3px] w-20 bg-green-500"></div> */}
 			</div>
 
-			<div className="flex items-center justify-center  mt-10">
+			<div className="flex items-center justify-center  mt-10 max-w-7xl mx-auto">
 				<Swiper
 					loop={true}
 					// grabCursor={true}
