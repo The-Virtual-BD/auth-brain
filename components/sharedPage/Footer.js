@@ -9,8 +9,8 @@ import { TbBrandTelegram } from "react-icons/tb";
 const Footer = () => {
 	return (
 		<footer>
-			<div className="h-[500px] bg-darkBg text-fontclr px-6 lg:px-32 py-10 max-w-7xl mx-auto">
-				<div className="grid grid-cols-1 lg:grid-cols-3">
+			<div className="h-[500px] bg-darkBg text-fontclr px-6 lg:px-32 py-10">
+				<div className="grid grid-cols-1 lg:grid-cols-3 max-w-7xl mx-auto">
 					<div>
 						<h2 className="text-4xl font-bold mt-20">
 							AUTHBRAIN Provides Digital Trust, Enabling Us to Build a Better

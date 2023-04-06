@@ -45,7 +45,7 @@ const Header = () => {
 	}, []);
 
 	return (
-		<div className={`bg-darkBg opacity-100  w-full   py-2 h-16   shadow-lg  fixed  z-50 ease-in duration-300 lg:${navbarStyle}`}>
+		<div className={`bg-darkBg opacity-100  w-full px-6 lg:px-32 py-2 h-16   shadow-lg  fixed  z-50 ease-in duration-300 lg:${navbarStyle}`}>
 			<header className="flex items-center justify-between max-w-7xl mx-auto">
 				<button
 					onClick={() => setOpen(!open)}
@@ -69,7 +69,7 @@ const Header = () => {
 				</Link>
 
 				<nav class="stroke">
-					<ul className="hidden  lg:flex lg:flex-row justify-between items-center gap-10 text-lg ">
+					<ul className="hidden  lg:flex lg:flex-row justify-between items-center gap-5 text-lg ">
 						{memuItems}
 					</ul>
 				</nav>

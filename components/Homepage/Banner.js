@@ -13,13 +13,13 @@ import { slideData } from "../sharedPage/StaticData";
 
 const Banner = () => {
 	return (
-		<div className="video-wrapper text-fontclr  pt-5 pb-5 flex items-center justify-center ">
+		<div className="video-wrapper text-fontclr  pt-5 pb-5 flex items-center justify-center  ">
 			<video autoPlay muted loop>
 				<source src="/assets/banner-video.mp4" type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
 
-			<div className="flex items-center justify-center w-5/6 px-10 max-w-7xl mx-auto">
+			<div className="flex items-center justify-center w-full lg:w-5/6 max-w-7xl mx-auto px-6 lg:px-32">
 				<Swiper
 					loop={true}
 					// grabCursor={true}

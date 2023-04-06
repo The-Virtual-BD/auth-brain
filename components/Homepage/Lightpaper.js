@@ -3,8 +3,8 @@ import React from "react";
 
 const Lightpaper = () => {
 	return (
-		<div className="bg-secdarkBg p-10 py-14 text-fontclr flex flex-col lg:flex-row items-center gap-5 ">
-			<div className="max-w-7xl mx-auto">
+		<div className="bg-secdarkBg p-10 py-14 text-fontclr  px-6 lg:px-32">
+			<div className="flex flex-col lg:flex-row items-center gap-5 max-w-7xl mx-auto">
 				<div className="w-full lg:w-1/2">
 					<h1 className="text-greenclr font-bold text-base uppercase mb-3">
 						Introducing

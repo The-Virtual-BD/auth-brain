@@ -14,7 +14,7 @@ import { industriesData, slideData } from "../sharedPage/StaticData";
 
 const Industries = () => {
 	return (
-		<div className="h-auto lg:h-[100vh] p-10 px-6 lg:px-32 bg-primary">
+		<div className="h-auto lg:h-[100vh] p-10  bg-primary px-6 lg:px-32">
 			<div className="flex flex-col gap-4 items-center justify-center text-center max-w-7xl mx-auto">
 				<h1 className="text-greenclr font-bold text-base uppercase ">
 					Industries
