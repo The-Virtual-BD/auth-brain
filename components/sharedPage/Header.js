@@ -44,7 +44,7 @@ const Header = () => {
 
 	return (
 		<div
-			className={`bg-darkBg opacity-100 lg:opacity-75 w-full px-6 lg:px-32 py-2 h-16 shadow-lg fixed z-50 ease-in duration-300`}
+			className={`bg-darkBg  w-full px-6 lg:px-32 py-2 h-16 shadow-lg fixed z-50 ease-in duration-300`}
 		>
 			<header className="flex items-center justify-between max-w-7xl mx-auto">
 				<button

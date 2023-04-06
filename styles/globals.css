@@ -48,21 +48,40 @@
 }
 
 .view-details-btn {
-	background: transparent;
+	font-size: 16px;
+	background: white;
 	border-radius: 8px;
-	padding: 12px 30px 12px 30px;
-	font-weight: 600;
+	font-weight: 500;
 	color: #111827;
 	border: 1px solid #111827;
-	transition: 0.1s all linear;
+	padding: 14px 20px 14px 20px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
 }
 .view-details-btn:hover {
 	color: white;
-	border: 1px solid white;
+}
+.view-details-btn::after {
+	content: "";
 	background: #111827;
+	position: absolute;
+	z-index: -1;
+	padding: 14px 20px 14px 20px;
+	display: block;
+	transition: all 0.5s ease;
+	left: -20%;
+	right: -20%;
+	top: 0;
+	bottom: 0;
+	transform: skewX(-45deg) scale(0, 1);
 }
 
-.view-explorer-btn {
+.view-details-btn:hover::after {
+	transform: skewX(-45deg) scale(1, 1);
+}
+
+/* .view-explorer-btn {
 	background: transparent;
 	border-radius: 8px;
 	padding: 12px 30px 12px 30px;
@@ -75,7 +94,7 @@
 	color: #111827;
 	border: 1px solid #111827;
 	background: white;
-}
+} */
 
 /*-------------------------
 		Home Page
@@ -129,7 +148,9 @@ nav.stroke ul li a:hover:after {
 
 /* Banner */
 .banner-bg {
-	background: url("/assets/Banner.png") no-repeat center;
+	background: url("/assets/Banner.png");
+	background-position: center;
+	background-size: cover;
 	height: 100vh;
 }
 video {

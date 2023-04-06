@@ -75,7 +75,7 @@ export const startedData = [
 export const industriesData = [
 	{
 		id: 1,
-		title: "Natural language processing (NLP)",
+		title: "Natural Language Processing (NLP)",
 		feat1: "Chatbot",
 		feat1Icon: <BiBot />,
 		feat1Desc:
