@@ -28,7 +28,7 @@ const Header = () => {
 		</>
 	);
 
-	/* 	useEffect(() => {
+		useEffect(() => {
 		const handleScroll = () => {
 			if (window.pageYOffset === 0) {
 				setNavbarTop(true);
@@ -40,13 +40,13 @@ const Header = () => {
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
-	}, []); */
+	}, []);
 
 	return (
 		<div
-			className={`bg-darkBg  w-full  lg:px-32 py-2 h-16 shadow-lg fixed z-50 ease-in duration-300`}
+			className={`bg-darkBg  w-full  lg:px-32 py-2 h-16 shadow-lg fixed z-50 ease-in duration-300 ${navbarTop?"opacity-100":"opacity-70"}`}
 		>
-			<header className="flex items-center justify-between max-w-7xl mx-auto">
+			<header className="flex items-center justify-between max-w-7xl mx-auto ">
 				<button
 					onClick={() => setOpen(!open)}
 					className="block lg:hidden mt-2 lg:mt-0 px-6"
