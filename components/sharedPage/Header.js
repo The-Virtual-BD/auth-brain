@@ -44,12 +44,12 @@ const Header = () => {
 
 	return (
 		<div
-			className={`bg-darkBg  w-full px-6 lg:px-32 py-2 h-16 shadow-lg fixed z-50 ease-in duration-300`}
+			className={`bg-darkBg  w-full  lg:px-32 py-2 h-16 shadow-lg fixed z-50 ease-in duration-300`}
 		>
 			<header className="flex items-center justify-between max-w-7xl mx-auto">
 				<button
 					onClick={() => setOpen(!open)}
-					className="block lg:hidden mt-2 lg:mt-0"
+					className="block lg:hidden mt-2 lg:mt-0 px-6"
 				>
 					{!open ? (
 						<AiOutlineMenu className="text-3xl text-white" />
@@ -76,7 +76,7 @@ const Header = () => {
 			</header>
 
 			{open ? (
-				<div className="bg-darkBg  text-white rounded w-full  pl-5  py-5 z-10 fixed ">
+				<div className="bg-darkBg  text-white rounded w-full  pl-3  py-5 z-10 fixed ">
 					<nav class="stroke">
 						<ul
 							className=" lg:hidden flex flex-col items-start  px-5 w-full"

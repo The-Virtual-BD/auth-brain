@@ -75,7 +75,7 @@ const IndustrySlide = ({ singleData }) => {
 				<div className="h-[3px] w-full bg-green-500"></div>
 			</div>
 
-			<div className="flex items-start justify-between gap-6 w-full h-full mt-10 bg-primary p-10">
+			<div className="flex flex-col lg:flex-row items-start justify-between gap-6 w-full h-full mt-10 bg-primary p-10">
 				<div className="flex flex-col items-center justify-center">
 					<div className="text-4xl text-center">{feat1Icon}</div>
 					<h2 className="text-xl font-bold my-3">{feat1}</h2>
