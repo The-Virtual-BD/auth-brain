@@ -28,6 +28,8 @@ const Header = () => {
 		</>
 	);
 
+
+	//Check Scroll Position
 		useEffect(() => {
 		const handleScroll = () => {
 			if (window.pageYOffset === 0) {
@@ -44,7 +46,7 @@ const Header = () => {
 
 	return (
 		<div
-			className={`bg-darkBg  w-full  lg:px-32 py-2 h-16 shadow-lg fixed z-50 ease-in duration-300 ${navbarTop?"opacity-100":"opacity-70"}`}
+			className={`bg-darkBg w-full  lg:px-32 py-2 h-16 shadow-lg fixed z-50 ease-in duration-300 ${navbarTop?"bg-opacity-0":"bg-opacity-25"}`}
 		>
 			<header className="flex items-center justify-between max-w-7xl mx-auto ">
 				<button
@@ -59,13 +61,13 @@ const Header = () => {
 				</button>
 
 				<Link href={"/"}>
-					{/*  <Image
-                        src={"/logo.png"}
+					 <Image
+                        src={"/assets/authbrain.png"}
                         width={150}
                         height={40}
                         alt="logo"
-                    /> */}
-					<h2 className="text-2xl font-bold text-white"> AuthBrain</h2>
+                    />
+					{/* <h2 className="text-2xl font-bold text-white"> AuthBrain</h2> */}
 				</Link>
 
 				<nav class="stroke">

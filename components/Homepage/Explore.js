@@ -20,7 +20,7 @@ const Explore = () => {
 							Foundation
 						</p>
 
-						<button class="text-green-500 capitalize font-bold flex items-center gap-1 tracking-normal hover:tracking-wide">
+						<button class="text-green-500 capitalize font-bold flex items-center gap-1 tracking-normal hover:tracking-wide  ease-in duration-300">
 							<span>View all departments</span>{" "}
 							<IoIosArrowForward className="font-bold " />
 						</button>
@@ -36,7 +36,7 @@ const Explore = () => {
 								<h2 class="title uppercase">{cardData.name}</h2>
 								<p class="copy">{cardData.desc}</p>
 
-								<button class="text-green-500 tracking-normal hover:tracking-wider flex items-center gap-1 ">
+								<button class="text-green-500 tracking-normal hover:tracking-wider flex items-center gap-1  ease-in duration-300 ">
 									<span>Learn More</span>{" "}
 									<IoIosArrowForward className="font-bold " />
 								</button>

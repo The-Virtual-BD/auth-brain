@@ -24,6 +24,7 @@
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	letter-spacing: 1px;
 }
 .animated-btn:hover {
 	color: #1bb55c;
@@ -50,7 +51,7 @@
 .view-details-btn {
 	font-size: 16px;
 	background: white;
-	border-radius: 8px;
+	border-radius: 5px;
 	font-weight: 500;
 	color: #111827;
 	border: 1px solid #111827;
@@ -58,6 +59,7 @@
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	letter-spacing: 1px;
 }
 .view-details-btn:hover {
 	color: white;
@@ -219,7 +221,8 @@ video {
 	border: 2px solid white;
 	border-radius: 50% !important;
 	font-size: 16px !important;
-	padding: 10px;
+	padding: 10px 14px !important;
+	opacity: 80%;
 }
 
 /* .image-container {
