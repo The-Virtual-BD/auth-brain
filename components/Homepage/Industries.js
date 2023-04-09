@@ -50,7 +50,9 @@ const Industries = () => {
 				</Swiper>
 			</div>
 			<div className="text-center ">
-				<Link href={"/solutions"} className="view-details-btn" >EXPLORE MORE</Link>
+				<button className="view-details-btn">
+					<Link href={"/solutions"}>EXPLORE MORE</Link>
+				</button>
 			</div>
 		</div>
 	);
