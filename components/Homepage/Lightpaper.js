@@ -9,18 +9,18 @@ const Lightpaper = () => {
 					<h1 className="text-greenclr font-bold text-base uppercase mb-3">
 						Introducing
 					</h1>
-					<h2 className=" introduce-title capitalize mb-4">
-						authbrain Lightpaper
+					<h2 className=" introduce-title mb-4">
+						AuthBrain Lightpaper
 					</h2>
 					<p className="text-fontclr text-sm mb-3">
 						Increasingly, companies and startups are integrating distributed
-						ledger technology (DLT) into their business. The AUTHBRAIN
+						ledger technology (DLT) into their business. The AuthBrain
 						Lightpaper for Business provides beginners with an overview of this
 						groundbreaking technology and the benefits it delivers to business,
 						as well as several inspiring use cases.
 					</p>
 					<p className="text-fontclr text-sm mb-4">
-						Download the AUTHBRAIN Lightpaper for Business for free and learn
+						Download the AuthBrain Lightpaper for Business for free and learn
 						how DLT enables new business models and cutting-edge innovation –
 						and how you could use it:
 					</p>

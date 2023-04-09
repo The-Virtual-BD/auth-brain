@@ -13,10 +13,10 @@ const Explore = () => {
 							explore
 						</h1>
 						<h2 class="text-4xl font-semibold capitalize mt-8 mb-4">
-							AUTHBRAIN <br /> Foundation
+							AuthBrain <br /> Foundation
 						</h2>
 						<p className=" text-sm text-paraclr mb-8">
-							Learn about the deep expertise that drives the AUTHBRAIN
+							Learn about the deep expertise that drives the AuthBrain
 							Foundation
 						</p>
 

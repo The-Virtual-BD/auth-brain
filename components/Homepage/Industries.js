@@ -11,6 +11,7 @@ import "swiper/css/effect-fade";
 // import required modules
 import { EffectFade, Navigation, Autoplay } from "swiper";
 import { industriesData, slideData } from "../sharedPage/StaticData";
+import Link from "next/link";
 
 const Industries = () => {
 	return (
@@ -21,7 +22,7 @@ const Industries = () => {
 				</h1>
 
 				<h2 className=" introduce-title capitalize text-white">
-					AUTHBRAIN enables <br /> new possibilities
+					AuthBrain enables <br /> new possibilities
 				</h2>
 				{/* <div className="h-[3px] w-20 bg-green-500"></div> */}
 			</div>
@@ -49,7 +50,7 @@ const Industries = () => {
 				</Swiper>
 			</div>
 			<div className="text-center ">
-				<button className="view-details-btn">EXPLORE MORE</button>
+				<Link href={"/solutions"} className="view-details-btn" >EXPLORE MORE</Link>
 			</div>
 		</div>
 	);
@@ -59,7 +60,7 @@ export default Industries;
 
 const IndustrySlide = ({ singleData }) => {
 	const {
-		id, 
+		id,
 		title,
 		feat1,
 		feat1Desc,

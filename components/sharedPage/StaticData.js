@@ -26,14 +26,14 @@ export const exploreCard = [
 		id: 1,
 		name: "Products",
 		desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus maxime perspiciatis aliquid",
-		img: "/assets/webdev.jpg",
+		img: "/assets/research2.png",
 	},
 
 	{
 		id: 3,
 		name: "Research ",
 		desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus maxime perspiciatis aliquid",
-		img: "/assets/research.jpg",
+		img: "/assets/product.png",
 	},
 ];
 
