@@ -2,12 +2,22 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { useRouter } from "next/router";
 
 const Header = () => {
+	const router = useRouter();
 	const [open, setOpen] = useState(false);
 	const [navbarTop, setNavbarTop] = useState(true);
+	// console.log(router.pathname);
 
-	const memuItems = (
+	const memuItems = [
+		{ name: "Home", path: "/" },
+		{ name: "Solution", path: "/solutions" },
+		{ name: "Contact", path: "/contact" },
+	];
+	const isActive = (path) => router.pathname === path;
+
+	/* const memuItems = (
 		<>
 			<li className="text-fontclr ">
 				<Link href={"/"} className="flex items-center">
@@ -26,7 +36,7 @@ const Header = () => {
 				</Link>
 			</li>
 		</>
-	);
+	); */
 
 	//Check Scroll Position
 	useEffect(() => {
@@ -73,7 +83,18 @@ const Header = () => {
 
 				<nav class="stroke">
 					<ul className="hidden  lg:flex lg:flex-row justify-between items-center gap-5 text-lg ">
-						{memuItems}
+						{memuItems.map((item, index) => (
+							<li key={index}>
+								<Link
+									href={item.path}
+									className={`${
+										isActive(item.path) ? "active text-greenclr" : "text-fontclr"
+									}`}
+								>
+									{item.name}
+								</Link>
+							</li>
+						))}
 					</ul>
 				</nav>
 			</header>
@@ -85,7 +106,20 @@ const Header = () => {
 							className=" lg:hidden flex flex-col items-start  px-5 w-full"
 							onClick={() => setOpen(!open)}
 						>
-							{memuItems}
+							{memuItems.map((item, index) => (
+								<li key={index}>
+									<Link
+										href={item.path}
+										className={`${
+											isActive(item.path)
+												? "active text-greenclr"
+												: "text-fontclr"
+										}`}
+									>
+										{item.name}
+									</Link>
+								</li>
+							))}
 						</ul>
 					</nav>
 				</div>

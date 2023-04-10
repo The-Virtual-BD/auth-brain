@@ -88,6 +88,7 @@ export const industriesData = [
 		feat3Icon: <BiUserCircle />,
 		feat3Desc:
 			"Human Centric Intelligence (HCI) is a concept that emphasizes the importance of human-centered design in the development of intelligent systems and technologies.",
+		video: "/assets/banner-video.mp4",
 	},
 	{
 		id: 2,
@@ -104,6 +105,7 @@ export const industriesData = [
 		feat3Icon: <BiUserCircle />,
 		feat3Desc:
 			"Human Centric Intelligence (HCI) is a concept that emphasizes the importance of human-centered design in the development of intelligent systems and technologies.",
+		video: "/assets/banner-video.mp4",
 	},
 	{
 		id: 3,
@@ -120,5 +122,6 @@ export const industriesData = [
 		feat3Icon: <BiUserCircle />,
 		feat3Desc:
 			"Human Centric Intelligence (HCI) is a concept that emphasizes the importance of human-centered design in the development of intelligent systems and technologies.",
+		video: "/assets/banner-video.mp4",
 	},
 ];

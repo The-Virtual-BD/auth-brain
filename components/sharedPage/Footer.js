@@ -20,7 +20,7 @@ const Footer = () => {
 								/>
 								{/* <h2 className="text-2xl font-bold text-white"> AuthBrain</h2> */}
 							</Link>
-							<h2 className="text-4xl font-bold mt-3 capitalize">
+							<h2 className="text-2xl lg:text-4xl font-bold mt-3 capitalize">
 								Provides Digital Trust,
 								<br /> Enabling Us to Build a <br /> Better World
 							</h2>

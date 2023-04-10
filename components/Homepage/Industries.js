@@ -15,44 +15,52 @@ import Link from "next/link";
 
 const Industries = () => {
 	return (
-		<div className=" p-10  bg-primary px-6 lg:px-32">
-			<div className="flex flex-col gap-4 items-center justify-center text-center max-w-7xl mx-auto">
-				<h1 className="text-greenclr font-bold text-base uppercase ">
-					Industries
-				</h1>
+		<div className="video-wrapper bg-transparent  p-10  px-6 lg:px-32">
+			<video autoPlay muted loop>
+				<source src="/assets/banner-video.mp4" type="video/mp4" />
+				Your browser does not support the video tag.
+			</video>
 
-				<h2 className=" introduce-title capitalize text-white">
-					AuthBrain enables <br /> new possibilities
-				</h2>
-				{/* <div className="h-[3px] w-20 bg-green-500"></div> */}
-			</div>
+			<div className="">
+				<div className="flex flex-col gap-4 items-center justify-center text-center max-w-7xl mx-auto">
+					<h1 className="text-greenclr font-bold text-base uppercase ">
+						Industries
+					</h1>
 
-			<div className="flex items-center justify-center  mt-10 max-w-7xl mx-auto">
-				<Swiper
-					loop={true}
-					// grabCursor={true}
-					effect={"fade"}
-					navigation={true}
-					autoplay={{
-						delay: 2500,
-						disableOnInteraction: true,
-					}}
-					slidesPerView={1}
-					slidesPerGroup={1}
-					modules={[EffectFade, Navigation, Autoplay]}
-					className="mySwiper"
-				>
-					{industriesData.map((singleData) => (
-						<SwiperSlide key={singleData.id}>
-							<IndustrySlide singleData={singleData} />
-						</SwiperSlide>
-					))}
-				</Swiper>
-			</div>
-			<div className="text-center ">
-				<button className="view-details-btn">
-					<Link href={"/solutions"}>EXPLORE MORE</Link>
-				</button>
+					<h2 className=" introduce-title capitalize text-white">
+						AuthBrain enables <br /> new possibilities
+					</h2>
+					{/* <div className="h-[3px] w-20 bg-green-500"></div> */}
+				</div>
+
+				<div className="flex items-center justify-center  mt-10 max-w-7xl mx-auto  px-6 lg:px-32">
+					<Swiper
+						loop={true}
+						// grabCursor={true}
+						// effect={"fade"}
+						navigation={true}
+						autoplay={{
+							delay: 2500,
+							disableOnInteraction: true,
+						}}
+						slidesPerView={1}
+						slidesPerGroup={1}
+						modules={[Navigation, Autoplay]}
+						className="mySwiper"
+					>
+						{industriesData.map((singleData) => (
+							<SwiperSlide key={singleData.id}>
+								<IndustrySlide singleData={singleData} />
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</div>
+
+				<div className="text-center mt-10">
+					<button className="view-details-btn">
+						<Link href={"/solutions"}>EXPLORE MORE</Link>
+					</button>
+				</div>
 			</div>
 		</div>
 	);
@@ -75,27 +83,27 @@ const IndustrySlide = ({ singleData }) => {
 		feat3Icon,
 	} = singleData;
 	return (
-		<div className=" w-full h-auto bg-primary text-fontclr flex flex-col items-center justify-center">
+		<div className=" w-full h-auto  text-fontclr flex flex-col items-center justify-center">
 			<div className="flex flex-col gap-2 p-10  ">
-				<h2 className="text-2xl font-bold text-start ">{title}</h2>
+				<h2 className=" text-xl lg:text-2xl font-bold text-start ">{title}</h2>
 				<div className="h-[3px] w-full bg-green-500"></div>
 			</div>
 
-			<div className="flex flex-col lg:flex-row items-start justify-between gap-6 w-full h-full mt-10 bg-primary p-10">
+			<div className="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-7 lg:gap-10 p-5  mt-10  ">
 				<div className="flex flex-col items-center justify-center">
-					<div className="text-4xl text-center">{feat1Icon}</div>
-					<h2 className="text-xl font-bold my-3">{feat1}</h2>
-					<p className="text-sm  w-[320px] ">{feat1Desc}</p>
+					<div className=" text-4xl text-center ">{feat1Icon}</div>
+					<h2 className=" text-lg lg:text-xl font-bold my-3">{feat1}</h2>
+					<p className="text-sm  w-[220px] ">{feat1Desc}</p>
 				</div>
 				<div className="flex flex-col items-center justify-center">
 					<div className="text-4xl text-center">{feat2Icon}</div>
-					<h2 className="text-xl font-bold my-3">{feat2}</h2>
-					<p className="text-sm w-[320px] ">{feat2Desc}</p>
+					<h2 className=" text-lg lg:text-xl font-bold my-3">{feat2}</h2>
+					<p className="text-sm  w-[220px]">{feat2Desc}</p>
 				</div>
 				<div className="flex flex-col items-center justify-center">
 					<div className="text-4xl text-center">{feat3Icon}</div>
-					<h2 className="text-xl font-bold my-3">{feat3}</h2>
-					<p className="text-sm w-[320px] ">{feat3Desc}</p>
+					<h2 className=" text-lg lg:text-xl font-bold my-3">{feat3}</h2>
+					<p className="text-sm  w-[220px] ">{feat3Desc}</p>
 				</div>
 			</div>
 		</div>
