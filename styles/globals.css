@@ -124,7 +124,7 @@ nav ul li a:before {
 	transition: all 0.5s;
 }
 nav ul li a:hover {
-	color: #ffffff;
+	color: #1bb55c;
 }
 
 nav.stroke ul li a,
