@@ -13,7 +13,7 @@ import { slideData } from "../sharedPage/StaticData";
 
 const Banner = () => {
 	return (
-		<div className="video-wrapper  banner  text-fontclr  pt-5 pb-5 flex items-center justify-center  ">
+		<div className="video-wrapper  text-fontclr  pt-5 pb-5 flex items-center justify-center  ">
 			<video autoPlay muted loop>
 				<source src="/assets/banner-video.mp4" type="video/mp4" />
 				Your browser does not support the video tag.

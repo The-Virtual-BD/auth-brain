@@ -52,10 +52,10 @@ const Header = () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
-
+ 
 	return (
 		<div
-			className={`bg-darkBg w-full  lg:px-32  shadow-lg fixed z-50 ease-in duration-300 ${
+			className={`bg-darkBg w-full  lg:px-32   shadow-lg fixed z-50 ease-in duration-300 ${
 				navbarTop ? "bg-opacity-0" : "bg-opacity-25"
 			}`}
 		>
