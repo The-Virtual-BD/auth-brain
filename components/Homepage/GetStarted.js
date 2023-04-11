@@ -2,6 +2,7 @@ import React from "react";
 import { startedData } from "../sharedPage/StaticData";
 
 import { MdOutlineArrowForwardIos } from "react-icons/md";
+import Link from "next/link";
 
 const GetStarted = () => {
 	return (
@@ -50,7 +51,10 @@ const GetStarted = () => {
 			</div>
 
 			<div className="text-center">
-				<button className="view-details-btn">VIEW OUR PRODUCTS</button>
+				<button className="view-details-btn">
+					<Link href={"/products"}>
+					VIEW OUR PRODUCTS</Link>
+				</button>
 			</div>
 		</div>
 	);

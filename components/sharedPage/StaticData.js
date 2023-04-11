@@ -27,6 +27,7 @@ export const exploreCard = [
 		name: "Products",
 		desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus maxime perspiciatis aliquid",
 		img: "/assets/research2.png",
+		path:"/products"
 	},
 
 	{
@@ -34,6 +35,7 @@ export const exploreCard = [
 		name: "Research ",
 		desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus maxime perspiciatis aliquid",
 		img: "/assets/product.png",
+		path:"/research"
 	},
 ];
 

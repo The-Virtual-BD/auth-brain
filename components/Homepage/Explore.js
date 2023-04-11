@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { exploreCard } from "../sharedPage/StaticData";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 
 const Explore = () => {
 	return (
@@ -36,9 +37,11 @@ const Explore = () => {
 								<h2 class="title uppercase">{cardData.name}</h2>
 								<p class="copy">{cardData.desc}</p>
 
-								<button class="text-green-500 tracking-normal hover:tracking-wider flex items-center gap-1  ease-in duration-300 ">
-									<span>Learn More</span>{" "}
-									<IoIosArrowForward className="font-bold " />
+								<button class="text-green-500 tracking-normal hover:tracking-wider  ease-in duration-300 ">
+									<Link href={`${cardData.path}`} className="flex items-center gap-1 ">
+										<span>Learn More</span>{" "}
+										<IoIosArrowForward className="font-bold " />
+									</Link>
 								</button>
 							</div>
 						</div>
