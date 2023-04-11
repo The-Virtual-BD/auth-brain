@@ -403,17 +403,18 @@ video {
 	}
 }
 
-
-
 /*-------------------------
 		Solutions Page
 ------------------------- */
 
-.solution-card{
+.solution-card {
 	background: #fff;
 	border-top: 8px solid #1bb55c;
 	color: #1f2937;
+	transition: 0.5s all ease;
 }
-.solution-card:hover{
-	
+.solution-card:hover {
+	background: #374151;
+	border-top: 8px solid #1bb55c;
+	color: #fff;
 }

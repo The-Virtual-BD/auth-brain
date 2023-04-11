@@ -54,19 +54,19 @@ const SolutionCard = ({ singleSol }) => {
 				<div className="w-full  rounded-md  p-5 text-center solution-card">
 					<div className="text-5xl flex items-center justify-center ">{feat1Icon}</div>
 					<h2 className="text-2xl font-semibold mt-5 mb-3 text-greenclr">{feat1}</h2>
-					<p className=" text-paraclr">{feat1Desc}</p>
+					<p className=" ">{feat1Desc}</p>
 				</div>
 
-				<div className="w-full bg-white  p-5 rounded-md  text-center  border-t-8 border-greenclr">
+				<div className="w-full solution-card p-5 rounded-md  text-center">
 					<div className="text-5xl flex items-center justify-center ">{feat2Icon}</div>
 					<h2 className="text-2xl font-semibold mt-5 mb-3 text-greenclr">{feat2}</h2>
-					<p className=" text-paraclr">{feat2Desc}</p>
+					<p className=" ">{feat2Desc}</p>
 				</div>
 
-				<div className="w-full bg-white  p-5 rounded-md  text-center  border-t-8 border-greenclr">
+				<div className="w-full solution-card p-5 rounded-md  text-center ">
 					<div className="text-5xl flex items-center justify-center ">{feat3Icon}</div>
 					<h2 className="text-2xl font-semibold mt-5 mb-3 text-greenclr">{feat3}</h2>
-					<p className=" text-paraclr">{feat3Desc}</p>
+					<p className=" ">{feat3Desc}</p>
 				</div>
 			</div>
 		</div>
