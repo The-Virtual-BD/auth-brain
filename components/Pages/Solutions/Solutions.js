@@ -50,7 +50,8 @@ const SolutionCard = ({ singleSol }) => {
 		<div>
 			<h2 className="text-2xl font-bold mb-5">{title}</h2>
 			<div className="grid grid-cols-1 lg:grid-cols-3 gap-10 text-primary">
-				<div className="w-full bg-white rounded-md  p-5 text-center border-t-8 border-greenclr">
+				
+				<div className="w-full  rounded-md  p-5 text-center solution-card">
 					<div className="text-5xl flex items-center justify-center ">{feat1Icon}</div>
 					<h2 className="text-2xl font-semibold mt-5 mb-3 text-greenclr">{feat1}</h2>
 					<p className=" text-paraclr">{feat1Desc}</p>

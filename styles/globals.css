@@ -403,4 +403,17 @@ video {
 	}
 }
 
-/* Footer */
+
+
+/*-------------------------
+		Solutions Page
+------------------------- */
+
+.solution-card{
+	background: #fff;
+	border-top: 8px solid #1bb55c;
+	color: #1f2937;
+}
+.solution-card:hover{
+	
+}

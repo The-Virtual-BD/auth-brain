@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { BsFacebook, BsGithub, BsYoutube } from "react-icons/bs";
+import Particles from "./Particles";
 
 const Footer = () => {
 	return (

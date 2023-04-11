@@ -17,7 +17,7 @@ const Industries = () => {
 	return (
 		<div className="industry-video-wrapper   bg-transparent  p-10  px-6 lg:px-32">
 			<video autoPlay muted loop>
-				<source src="/assets/banner-video.mp4" type="video/mp4" />
+				<source src="/assets/Particles2.mp4" type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
 
