@@ -8,7 +8,7 @@ const Solutions = () => {
 				<h2 className="text-6xl font-bold text-center">Solutions</h2>
 			</div>
 
-			<div className="p-10 max-w-7xl mx-auto flex flex-col items-center">
+			<div className="py-10 max-w-7xl mx-auto flex flex-col items-center ">
 				<div className="flex flex-col gap-4 items-center justify-center text-center max-w-7xl mx-auto">
 					<h1 className="text-greenclr font-bold text-base uppercase ">
 						Solutions
@@ -19,7 +19,7 @@ const Solutions = () => {
 					<div className="h-[3px] w-20 bg-green-500"></div>
 				</div>
 
-				<div className="flex flex-col items-center gap-10 mt-20">
+				<div className="flex flex-col items-center gap-5 px-6 lg:px-24 mt-20">
 					{industriesData.map((singleSol) => (
 						<SolutionCard key={singleSol.id} singleSol={singleSol} />
 					))}
@@ -49,7 +49,7 @@ const SolutionCard = ({ singleSol }) => {
 	return (
 		<div>
 			<h2 className="text-2xl font-bold mb-5">{title}</h2>
-			<div className="grid grid-cols-1 lg:grid-cols-3 gap-10 text-primary">
+			<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 text-primary">
 				<div className="w-full  rounded-md  p-5 text-center solution-card">
 					<div className="text-5xl flex items-center justify-center ">
 						{feat1Icon}

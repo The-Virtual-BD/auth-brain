@@ -27,7 +27,7 @@ export const exploreCard = [
 		name: "Products",
 		desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus maxime perspiciatis aliquid",
 		img: "/assets/research2.png",
-		path:"/products"
+		path: "/products",
 	},
 
 	{
@@ -35,7 +35,7 @@ export const exploreCard = [
 		name: "Research ",
 		desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus maxime perspiciatis aliquid",
 		img: "/assets/product.png",
-		path:"/research"
+		path: "/research",
 	},
 ];
 
@@ -125,5 +125,68 @@ export const industriesData = [
 		feat3Desc:
 			"Human Centric Intelligence (HCI) is a concept that emphasizes the importance of human-centered design in the development of intelligent systems and technologies.",
 		video: "/assets/banner-video.mp4",
+	},
+];
+
+export const productsData = [
+	{
+		id: 1,
+		name: "DiabTest",
+		category: "Deep Learning",
+		title:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur .",
+		img: "/assets/research2.png",
+		Featimg: "/assets/Banner.png",
+	},
+	{
+		id: 2,
+		name: "DiabTest2",
+		category: "Deep Learning",
+		title:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur .",
+		img: "/assets/product.png",
+		Featimg: "/assets/Banner.png",
+	},
+	{
+		id: 3,
+		name: "DiabTest3",
+		category: "Deep Learning",
+		title:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur .",
+		img: "/assets/research2.png",
+		Featimg: "/assets/Banner.png",
+	},
+	{
+		id: 4,
+		name: "DiabTest4",
+		category: "Deep Learning",
+		title:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur .",
+		img: "/assets/research2.png",
+		Featimg: "/assets/Banner.png",
+	},
+	{
+		id: 5,
+		name: "DiabTest5",
+		category: "Deep Learning",
+		title:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur .",
+		img: "/assets/product.png",
+		Featimg: "/assets/Banner.png",
+	},
+	{
+		id: 6,
+		name: "DiabTest6",
+		category: "Deep Learning",
+		title:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet consequuntur .",
+		img: "/assets/research2.png",
+		Featimg: "/assets/Banner.png",
 	},
 ];
