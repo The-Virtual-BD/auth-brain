@@ -5,6 +5,7 @@ import Industries from "../components/Homepage/Industries";
 import Lightpaper from "../components/Homepage/Lightpaper";
 import Explore from "../components/Homepage/Explore";
 import GetStarted from "../components/Homepage/GetStarted";
+import Team from "../components/Pages/Team";
 
 export default function Home() {
 	return (
@@ -19,6 +20,7 @@ export default function Home() {
 				<Introduc />
 				<Industries />
 				<Lightpaper />
+				<Team />
 				<GetStarted />
 				<Explore />
 			</div>

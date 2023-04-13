@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Introduc = () => {
@@ -19,7 +20,9 @@ const Introduc = () => {
 					any fees.
 				</p>
 
-				<button className="animated-btn">LEARN ABOUT AUTHBRAIN</button>
+				<button className="animated-btn">
+					<Link href={"/aboutus"}>LEARN ABOUT AUTHBRAIN</Link>
+				</button>
 			</div>
 		</div>
 	);

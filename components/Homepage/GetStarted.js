@@ -1,60 +1,63 @@
 import React from "react";
-import { startedData } from "../sharedPage/StaticData";
+import { startedData, teamMember } from "../sharedPage/StaticData";
 
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
 
 const GetStarted = () => {
 	return (
-		<div className=" py-10 text-primary px-6 lg:px-32 ">
-			<h2 className=" introduce-title capitalize text-center">Get Started</h2>
-
-			<div className="grid grid-cols-1 lg:grid-cols-3 gap-10 my-10 max-w-7xl mx-auto ">
-				{startedData.map((data) => (
-					<div
-						key={data.id}
-						className="p-10 rounded-lg  flex flex-col justify-center gap-5  started-card"
-					>
-						<div className="flex flex-col items-center ">
-							<h1 className="font-bold uppercase text-base ">{data.title}</h1>
-
-							<h2 className="font-bold text-3xl mt-4 mb-5">{data.subTitle}</h2>
-
-							<p className="text-sm mb-5 text-center">{data.desc}</p>
-
-							<ul className="text-sm  text-start my-8 ">
-								<li className="flex items-center gap-1">
-									{" "}
-									<MdOutlineArrowForwardIos /> <span>{data.step1}</span>
-								</li>
-								<li className="flex items-center gap-1 my-3">
-									{" "}
-									<MdOutlineArrowForwardIos /> <span>{data.step2}</span>
-								</li>
-								<li className="flex items-center gap-1 my-3">
-									{" "}
-									<MdOutlineArrowForwardIos /> <span>{data.step3}</span>
-								</li>
-
-								{data.step4 && (
-									<li className="flex items-center gap-1">
-										{" "}
-										<MdOutlineArrowForwardIos /> <span>{data.step4}</span>
-									</li>
-								)}
-							</ul>
-
-							<button className="started-card-btn mt-8">{data.btnName}</button>
-						</div>
-					</div>
-				))}
-			</div>
-
-			<div className="text-center">
-				<button className="view-details-btn">
-					<Link href={"/products"}>
-					VIEW OUR PRODUCTS</Link>
-				</button>
+		<div className=" py-10 px-6 lg:px-32 ">
+			<div class="card__collection clear-fix">
+				<div class="cards cards--two">
+					<img
+						src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
+						class="img-responsive"
+						alt="Cards Image"
+					/>
+					<span class="cards--two__rect"></span>
+					<span class="cards--two__tri"></span>
+					<p>Lucy Grace</p>
+					<ul class="cards__list">
+						<li>
+							<i class="fab fa-facebook-f"></i>
+						</li>
+						<li>
+							<i class="fab fa-twitter"></i>
+						</li>
+						<li>
+							<i class="fab fa-instagram"></i>
+						</li>
+						<li>
+							<i class="fab fa-linkedin-in"></i>
+						</li>
+					</ul>
+				</div>
+				<div class="cards cards--three">
+					<img
+						src="https://images.unsplash.com/photo-1480408144303-d874c5e12201?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575213599ae24b3dbdfd84be79425c50&auto=format&fit=crop&w=634&q=80"
+						class="img-responsive"
+						alt=""
+					/>
+					<span class="cards--three__rect-1">
+						<span class="shadow-1"></span>
+						<p>Chris Levnon</p>
+					</span>
+					<span class="cards--three__rect-2">
+						<span class="shadow-2"></span>
+					</span>
+					<span class="cards--three__circle"></span>
+					<ul class="cards--three__list">
+						<li>
+							<i class="fab fa-facebook-f"></i>
+						</li>
+						<li>
+							<i class="fab fa-twitter"></i>
+						</li>
+						<li>
+							<i class="fab fa-linkedin-in"></i>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	);

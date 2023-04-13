@@ -21,9 +21,11 @@ const Explore = () => {
 							Foundation
 						</p>
 
-						<button class="text-green-500 capitalize font-bold flex items-center gap-1 tracking-normal hover:tracking-wide  ease-in duration-300">
-							<span>View all departments</span>{" "}
-							<IoIosArrowForward className="font-bold " />
+						<button class="text-green-500 capitalize font-bold tracking-normal hover:tracking-wide  ease-in duration-300">
+							<Link href={"/solutions"} className="flex items-center gap-1 ">
+								<span>View all solutions</span>{" "}
+								<IoIosArrowForward className="font-bold " />
+							</Link>
 						</button>
 					</div>
 
@@ -38,7 +40,10 @@ const Explore = () => {
 								<p class="copy">{cardData.desc}</p>
 
 								<button class="text-green-500 tracking-normal hover:tracking-wider ease-in duration-300 ">
-									<Link href={`${cardData.path}`} className="flex items-center gap-1 ">
+									<Link
+										href={`${cardData.path}`}
+										className="flex items-center gap-1 "
+									>
 										<span>Learn More</span>{" "}
 										<IoIosArrowForward className="font-bold " />
 									</Link>

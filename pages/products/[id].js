@@ -18,8 +18,8 @@ const SingleProducts = () => {
 			</div>
 
 			<div className="  py-10 max-w-7xl mx-auto px-6 lg:px-24">
-				<h2 className="text-center font-bold text-3xl">{singProduct?.name}</h2>
-				<p className="text-center mt-1">{singProduct?.title}</p>
+				<h2 className=" font-bold text-3xl">{singProduct?.name}</h2>
+				<p className=" mt-1">{singProduct?.title}</p>
 
 				<div className=" py-5 ">
 					<img

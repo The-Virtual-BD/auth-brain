@@ -9,9 +9,7 @@ const Lightpaper = () => {
 					<h1 className="text-greenclr font-bold text-base uppercase mb-3">
 						Introducing
 					</h1>
-					<h2 className=" introduce-title mb-4">
-						AuthBrain Lightpaper
-					</h2>
+					<h2 className=" introduce-title mb-4">Our Research</h2>
 					<p className="text-fontclr text-sm mb-3">
 						Increasingly, companies and startups are integrating distributed
 						ledger technology (DLT) into their business. The AuthBrain
@@ -29,7 +27,7 @@ const Lightpaper = () => {
 
 				<div className="w-full lg:w-1/2">
 					<Image
-						src={"/assets/lightpaper.png"}
+						src={"/assets/loghtpaper.jpg"}
 						alt="lightpaper"
 						width={640}
 						height={400}

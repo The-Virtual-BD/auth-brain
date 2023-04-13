@@ -58,7 +58,7 @@ const Industries = () => {
 
 				<div className="text-center mt-5">
 					<button className="view-details-btn">
-						<Link href={"/solutions"}>EXPLORE MORE</Link>
+						<Link href={"/solutions"}>LEARN MORE</Link>
 					</button>
 				</div>
 			</div>
@@ -93,17 +93,17 @@ const IndustrySlide = ({ singleData }) => {
 				<div className="flex flex-col items-center justify-center">
 					<div className=" text-4xl text-center ">{feat1Icon}</div>
 					<h2 className=" text-lg lg:text-xl font-bold my-3">{feat1}</h2>
-					<p className="text-sm  w-[220px] ">{feat1Desc}</p>
+					<p className="text-sm  ">{feat1Desc}</p>
 				</div>
 				<div className="flex flex-col items-center justify-center">
 					<div className="text-4xl text-center">{feat2Icon}</div>
 					<h2 className=" text-lg lg:text-xl font-bold my-3">{feat2}</h2>
-					<p className="text-sm  w-[220px]">{feat2Desc}</p>
+					<p className="text-sm  ">{feat2Desc}</p>
 				</div>
 				<div className="flex flex-col items-center justify-center">
 					<div className="text-4xl text-center">{feat3Icon}</div>
 					<h2 className=" text-lg lg:text-xl font-bold my-3">{feat3}</h2>
-					<p className="text-sm  w-[220px] ">{feat3Desc}</p>
+					<p className="text-sm ">{feat3Desc}</p>
 				</div>
 			</div>
 		</div>

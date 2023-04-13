@@ -1,18 +1,19 @@
 import React from "react";
 
-const Research = () => {
+const Privacypolicy = () => {
 	return (
 		<div className=" bg-primary text-white ">
 			<div className="banner-bg flex items-center justify-center">
-				<h2 className="text-6xl font-bold text-center">Research</h2>
+				<h2 className="text-6xl font-bold text-center">Privacy Policy</h2>
 			</div>
+
 			<div className="py-10 max-w-7xl mx-auto flex flex-col items-center px-6 lg:px-24 ">
 				<div className="flex flex-col gap-4 items-center justify-center text-center max-w-7xl mx-auto">
 					<h1 className="text-greenclr font-bold text-base uppercase ">
-					Research
+						Policy
 					</h1>
 					<h2 className=" introduce-title capitalize text-white">
-						About Our Research
+						Our Privacy Policy
 					</h2>
 					<div className="h-[3px] w-20 bg-green-500"></div>
 				</div>
@@ -72,4 +73,4 @@ const Research = () => {
 	);
 };
 
-export default Research;
+export default Privacypolicy;

@@ -13,30 +13,10 @@ const Header = () => {
 	const memuItems = [
 		{ name: "Home", path: "/" },
 		{ name: "Solution", path: "/solutions" },
+		{ name: "About Us", path: "/aboutus" },
 		{ name: "Contact", path: "/contact" },
 	];
 	const isActive = (path) => router.pathname === path;
-
-	/* const memuItems = (
-		<>
-			<li className="text-fontclr ">
-				<Link href={"/"} className="flex items-center">
-					<span>Home</span>
-				</Link>
-			</li>
-
-			<li className="text-fontclr ">
-				<Link href={"/solutions"} className="flex items-center">
-					<span>Solution</span>
-				</Link>
-			</li>
-			<li className="text-fontclr ">
-				<Link href={"/contact"} className="flex items-center">
-					<span>Contact</span>
-				</Link>
-			</li>
-		</>
-	); */
 
 	//Check Scroll Position
 	useEffect(() => {
@@ -52,7 +32,7 @@ const Header = () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
- 
+
 	return (
 		<div
 			className={`bg-darkBg w-full  lg:px-32  fixed z-50 ease-in duration-300 ${
@@ -88,7 +68,9 @@ const Header = () => {
 								<Link
 									href={item.path}
 									className={`${
-										isActive(item.path) ? "active text-greenclr" : "text-fontclr"
+										isActive(item.path)
+											? "active text-greenclr"
+											: "text-fontclr"
 									}`}
 								>
 									{item.name}
