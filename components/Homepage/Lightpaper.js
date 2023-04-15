@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Lightpaper = () => {
@@ -22,7 +23,9 @@ const Lightpaper = () => {
 						how DLT enables new business models and cutting-edge innovation –
 						and how you could use it:
 					</p>
-					<button className="animated-btn">EXPLORE</button>
+					<button className="view-details-btn">
+						<Link href={"/research"}>EXPLORE</Link>
+					</button>
 				</div>
 
 				<div className="w-full lg:w-1/2">

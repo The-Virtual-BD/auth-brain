@@ -17,7 +17,7 @@ const Industries = () => {
 	return (
 		<div className="industry-video-wrapper   bg-transparent  p-10  px-6 lg:px-32">
 			<video autoPlay muted loop>
-				<source src="/assets/Particles2.mp4" type="video/mp4" />
+				<source src="/assets/node.bg.mp4" type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
 
@@ -40,7 +40,7 @@ const Industries = () => {
 						// effect={"fade"}
 						navigation={true}
 						autoplay={{
-							delay: 2500,
+							delay: 3000,
 							disableOnInteraction: true,
 						}}
 						slidesPerView={1}
@@ -89,7 +89,7 @@ const IndustrySlide = ({ singleData }) => {
 				<div className="h-[3px] w-full bg-green-500"></div>
 			</div>
 
-			<div className="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-7 lg:gap-10 p-5  mt-5  ">
+			<div className="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-7 lg:gap-10 p-5  mt-5 ">
 				<div className="flex flex-col items-center justify-center">
 					<div className=" text-4xl text-center ">{feat1Icon}</div>
 					<h2 className=" text-lg lg:text-xl font-bold my-3">{feat1}</h2>

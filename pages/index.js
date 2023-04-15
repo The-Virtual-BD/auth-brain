@@ -20,7 +20,7 @@ export default function Home() {
 				<Introduc />
 				<Industries />
 				<Lightpaper />
-				<Team />
+				{/* <Team /> */}
 				<GetStarted />
 				<Explore />
 			</div>

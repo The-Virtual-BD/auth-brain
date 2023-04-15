@@ -3,64 +3,68 @@ import { startedData, teamMember } from "../sharedPage/StaticData";
 
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 const GetStarted = () => {
 	return (
-		<div className=" py-10 px-6 lg:px-32 ">
-			<div class="card__collection clear-fix">
-				<div class="cards cards--two">
-					<img
-						src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
-						class="img-responsive"
-						alt="Cards Image"
-					/>
-					<span class="cards--two__rect"></span>
-					<span class="cards--two__tri"></span>
-					<p>Lucy Grace</p>
-					<ul class="cards__list">
-						<li>
-							<i class="fab fa-facebook-f"></i>
-						</li>
-						<li>
-							<i class="fab fa-twitter"></i>
-						</li>
-						<li>
-							<i class="fab fa-instagram"></i>
-						</li>
-						<li>
-							<i class="fab fa-linkedin-in"></i>
-						</li>
-					</ul>
-				</div>
-				<div class="cards cards--three">
-					<img
-						src="https://images.unsplash.com/photo-1480408144303-d874c5e12201?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575213599ae24b3dbdfd84be79425c50&auto=format&fit=crop&w=634&q=80"
-						class="img-responsive"
-						alt=""
-					/>
-					<span class="cards--three__rect-1">
-						<span class="shadow-1"></span>
-						<p>Chris Levnon</p>
-					</span>
-					<span class="cards--three__rect-2">
-						<span class="shadow-2"></span>
-					</span>
-					<span class="cards--three__circle"></span>
-					<ul class="cards--three__list">
-						<li>
-							<i class="fab fa-facebook-f"></i>
-						</li>
-						<li>
-							<i class="fab fa-twitter"></i>
-						</li>
-						<li>
-							<i class="fab fa-linkedin-in"></i>
-						</li>
-					</ul>
-				</div>
+		<div className=" py-10 bg-primary text-white">
+			<h2 className=" introduce-title capitalize text-center">Our Team</h2>
+			<div className="grid grid-cols-1 lg:grid-cols-3 gap-20 lg:gap-8 mt-10 mb-20  max-w-7xl mx-auto px-6 lg:px-24">
+				{teamMember
+					.map((team) => <MemberCard key={team.id} team={team} />).slice(0,3)
+					}
+			</div>
+
+			<div className="text-center ">
+				<button className="view-details-btn">
+					<Link href={"/aboutus"}>MEET OTHER TEAM MEMBERS</Link>
+				</button>
 			</div>
 		</div>
 	);
 };
 
 export default GetStarted;
+
+const MemberCard = ({ team }) => {
+	const { id, name, img, designation, linkedIn, github } = team;
+	return (
+		<div>
+			<div className="team_card ">
+				<div className="team_img">
+					<img src={img} alt="" />
+				</div>
+
+				<div className="team_info">
+					<h2 className="font-semibold">{name}</h2>
+					<p className="italic">{designation}</p>
+
+					<div className="team_social">
+						<div className="flex items-center gap-3 justify-center">
+							<div className="team_social_icon">
+								<Link href={"#"}>
+									<BsFacebook />
+								</Link>
+							</div>
+							<div className="team_social_icon">
+								<Link href={"#"}>
+									<BsTwitter />
+								</Link>
+							</div>
+							<div className="team_social_icon">
+								<Link href={"#"}>
+									<BsInstagram />
+								</Link>
+							</div>
+							<div className="team_social_icon">
+								<Link href={"#"}>
+									<BsLinkedin />
+								</Link>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
