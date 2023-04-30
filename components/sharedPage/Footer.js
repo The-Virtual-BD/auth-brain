@@ -41,7 +41,7 @@ const Footer = () => {
 						</div>
 
 						<div className="text-start mt-14">
-							<div className="flex items-center gap-3">
+							<div className="flex items-center gap-3 mb-5">
 								<div className="h-8 w-8 rounded-full bg-[#1877F2] hover:bg-greenclr flex items-center justify-center">
 									<a href="https://www.facebook.com/TheVirtualBD" target="_blank" rel="noopener noreferrer">
 										<BsFacebook className="text-xl" />
@@ -65,7 +65,7 @@ const Footer = () => {
 								</div>
 							</div>
 
-							<div className="my-5">
+							{/* <div className="my-5">
 								<h3 className=" text-greenclr font-bold mb-1">SUBSCRIPTION</h3>
 								<form>
 									<input
@@ -74,7 +74,7 @@ const Footer = () => {
 										placeholder="Enter your email"
 									/>
 								</form>
-							</div>
+							</div> */}
 
 							<div>
 								<p className="text-sm">
