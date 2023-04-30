@@ -9,7 +9,7 @@ const GetStarted = () => {
 	return (
 		<div className=" py-10 bg-primary text-white">
 			<h2 className=" introduce-title capitalize text-center">Our Team</h2>
-			<div className="grid grid-cols-1 lg:grid-cols-3 gap-20 lg:gap-8 mt-10 mb-20  max-w-7xl mx-auto px-6 lg:px-24">
+			<div className="grid grid-cols-1 lg:grid-cols-3 gap-20 lg:gap-8 mt-10 mb-20  max-w-7xl mx-auto px-6 ">
 				{teamMember
 					.map((team) => <MemberCard key={team.id} team={team} />).slice(0,3)
 					}

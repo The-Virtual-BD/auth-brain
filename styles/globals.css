@@ -63,7 +63,7 @@
 }
 .view-details-btn:hover {
 	color: #1f2937;
-	font-weight: 500;
+	font-weight: 600;
 }
 .view-details-btn::after {
 	content: "";

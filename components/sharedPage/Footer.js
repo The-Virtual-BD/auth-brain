@@ -78,13 +78,8 @@ const Footer = () => {
 
 							<div>
 								<p className="text-sm">
-									© 2023 AuthBrain -{" "}
-									<span className="text-greenclr">
-										<Link href={"/privacy-policy"}>Privacy Policy</Link> ,
-										{/* <Link href={"#"}>Trademark Policy</Link> , */}
-										<Link href={"#"}>Terms of Use</Link> ,
-										<Link href={"#"}>Cookie Policy</Link>
-									</span>
+									© 2023 - <Link href={"/"} className="text-greenclr">AuthBrain</Link> - All Rights Reserved.
+									
 								</p>
 								<p className="text-sm">
 									Get in touch :{" "}
