@@ -27,10 +27,10 @@ export const slideData = [
 export const exploreCard = [
 	{
 		id: 1,
-		name: "Products",
+		name: "Solution",
 		desc: " Convenient online services for  health, education, and more. User-friendly, scalable, and accessible from anywhere with an internet connection.",
 		img: "/assets/research2.png",
-		path: "/products",
+		path: "/solutions",
 	},
 
 	{
@@ -219,7 +219,7 @@ export const teamMember = [
 		linkedIn: "#",
 		github: "#",
 	},
-	{
+	/* {
 		id: 4,
 		name: "Md. Mehedi Hasan",
 		designation: "CEO",
@@ -242,5 +242,5 @@ export const teamMember = [
 		img: "/assets/team/asaf-kakon.jpg",
 		linkedIn: "#",
 		github: "#",
-	},
+	}, */
 ];

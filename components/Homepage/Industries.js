@@ -8,7 +8,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-
 // import required modules
 import { EffectFade, Navigation, Autoplay } from "swiper";
 import { industriesData, slideData } from "../sharedPage/StaticData";
@@ -16,7 +15,7 @@ import Link from "next/link";
 
 const Industries = () => {
 	return (
-		<div className="industry-video-wrapper   bg-transparent  p-10  px-6 lg:px-32">
+		<div className="industry-video-wrapper  p-10  px-6 lg:px-32">
 			<video autoPlay muted loop>
 				<source src="/assets/node.bg.mp4" type="video/mp4" />
 				Your browser does not support the video tag.
@@ -84,27 +83,31 @@ const IndustrySlide = ({ singleData }) => {
 		feat3Icon,
 	} = singleData;
 	return (
-		<div className=" w-full h-auto  text-fontclr flex flex-col items-center justify-center">
+		<div className=" w-full h-auto  text-fontclr flex flex-col items-center justify-center ">
 			<div className="flex flex-col gap-2 p-5  ">
 				<h2 className=" text-xl lg:text-2xl font-bold text-start ">{title}</h2>
 				<div className="h-[3px] w-full bg-green-500"></div>
 			</div>
 
-			<div className="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-7 lg:gap-10 p-5  mt-5 ">
-				<div className="flex flex-col items-center justify-center">
-					<div className=" text-4xl text-center ">{feat1Icon}</div>
-					<h2 className=" text-lg lg:text-xl font-bold my-3">{feat1}</h2>
-					<p className="text-sm  ">{feat1Desc}</p>
-				</div>
-				<div className="flex flex-col items-center justify-center">
-					<div className="text-4xl text-center">{feat2Icon}</div>
-					<h2 className=" text-lg lg:text-xl font-bold my-3">{feat2}</h2>
-					<p className="text-sm  ">{feat2Desc}</p>
-				</div>
-				<div className="flex flex-col items-center justify-center">
-					<div className="text-4xl text-center">{feat3Icon}</div>
-					<h2 className=" text-lg lg:text-xl font-bold my-3">{feat3}</h2>
-					<p className="text-sm ">{feat3Desc}</p>
+			<div>
+				<div className="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-7 lg:gap-10 p-5  mt-5 px-6 ">
+					<div className="flex flex-col items-center justify-center ">
+						<div className=" text-4xl text-center ">{feat1Icon}</div>
+						<h2 className=" text-lg lg:text-xl font-bold my-3">{feat1}</h2>
+						<p className="text-sm w-60 lg:w-full">{feat1Desc}</p>
+					</div>
+
+					<div className="flex flex-col items-center justify-center">
+						<div className="text-4xl text-center">{feat2Icon}</div>
+						<h2 className=" text-lg lg:text-xl font-bold my-3">{feat2}</h2>
+						<p className="text-sm  w-60 lg:w-full">{feat2Desc}</p>
+					</div>
+
+					<div className="flex flex-col items-center justify-center">
+						<div className="text-4xl text-center">{feat3Icon}</div>
+						<h2 className=" text-lg lg:text-xl font-bold my-3">{feat3}</h2>
+						<p className="text-sm  w-60 lg:w-full">{feat3Desc}</p>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -30,26 +30,30 @@ const Footer = () => {
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
 						<div className="text-start mt-14">
 							<h3 className="text-greenclr mb-2">Registered Address</h3>
+
 							<p className="text-sm">
-								Deira, Near Gold Center Building,
+								Home 315, Road 3, Phase 2,
 								<br />
-								Dubai 75157, <br />
-								United Arab Emirates
+								Sonadanga R/A, Khulna 9100,
+								<br />
+								Bangladesh
 							</p>
 						</div>
 
 						<div className="text-start mt-14">
 							<div className="flex items-center gap-3">
 								<div className="h-8 w-8 rounded-full bg-[#1877F2] hover:bg-greenclr flex items-center justify-center">
-									<a href="#" target="_blank" rel="noopener noreferrer">
+									<a href="https://www.facebook.com/TheVirtualBD" target="_blank" rel="noopener noreferrer">
 										<BsFacebook className="text-xl" />
 									</a>
 								</div>
+
 								<div className="h-8 w-8 rounded-full bg-[#FF0000] hover:bg-greenclr flex items-center justify-center">
 									<a href="#" target="_blank" rel="noopener noreferrer">
 										<BsYoutube className="text-xl" />
 									</a>
 								</div>
+								
 								<div className="h-8 w-8 rounded-full bg-white hover:bg-greenclr flex items-center justify-center">
 									<a
 										href="https://github.com/AuthBrain"
