@@ -6,6 +6,7 @@ import Lightpaper from "../components/Homepage/Lightpaper";
 import Explore from "../components/Homepage/Explore";
 import GetStarted from "../components/Homepage/GetStarted";
 import Team from "../components/Pages/Team";
+import Banner2 from "../components/Homepage/Banner2";
 
 export default function Home() {
 	return (
@@ -16,7 +17,8 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className="">
-				<Banner />
+				{/* <Banner /> */}
+				<Banner2 />
 				<Introduc />
 				<Industries />
 				<Lightpaper />

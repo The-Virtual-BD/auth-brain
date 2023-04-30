@@ -8,16 +8,19 @@ export const slideData = [
 		id: 1,
 		title: "Blockchain Technology",
 		desc: "A blockchain is a type of distributed database or ledger—one of today's top tech trends—which means the power to update a blockchain is distributed between the nodes, or participants, of a public or private computer network.",
+		vdo: "/assets/block.mp4",
 	},
 	{
 		id: 2,
 		title: "IoT",
 		desc: "The Internet of Things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet.",
+		vdo: "/assets/IOT.mp4",
 	},
 	{
 		id: 3,
 		title: "NLP",
 		desc: "Natural language processing (NLP) refers to the branch of computer science—and more specifically, the branch of artificial intelligence or AI—concerned with giving computers the ability to understand text and spoken words in much the same way human beings can.",
+		vdo: "/assets/particle-bg.mp4",
 	},
 ];
 

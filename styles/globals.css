@@ -180,6 +180,7 @@ video {
 	align-items: center;
 	justify-content: center;
 	padding: 20px !important;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .industry-video-wrapper {
 	width: 100%;
@@ -241,6 +242,9 @@ video {
 	font-size: 16px !important;
 	padding: 10px 14px !important;
 	opacity: 80%;
+}
+.swiper-pagination-bullet {
+	background: #1bb55c !important;
 }
 
 /* .image-container {

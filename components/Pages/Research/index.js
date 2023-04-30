@@ -1,4 +1,5 @@
 import React from "react";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Research = () => {
 	return (
@@ -9,7 +10,7 @@ const Research = () => {
 			<div className="py-10 max-w-7xl mx-auto flex flex-col items-center px-6 lg:px-24 ">
 				<div className="flex flex-col gap-4 items-center justify-center text-center max-w-7xl mx-auto">
 					<h1 className="text-greenclr font-bold text-base uppercase ">
-					Research
+						Research
 					</h1>
 					<h2 className=" introduce-title capitalize text-white">
 						About Our Research
@@ -66,6 +67,22 @@ const Research = () => {
 						dolor sit amet consectetur adipisicing elit. Qui architecto odit quo
 						officia ad reiciendis, eius dignissimos natus placeat quis!
 					</p>
+
+					<div className="text-center mt-5">
+						<button className="view-details-btn">
+							<a
+								href="https://scholar.google.com/citations?user=Ts2F72QAAAAJ&hl=en"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex items-center gap-1"
+							>
+								<span>Let&lsquo;s Check Our Research</span>{" "}
+								<IoIosArrowForward className="font-bold " />
+							</a>
+						</button>
+					</div>
+
+					{/* <p className="text-greenclr"> </p> */}
 				</div>
 			</div>
 		</div>

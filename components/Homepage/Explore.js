@@ -21,8 +21,8 @@ const Explore = () => {
 							Foundation
 						</p>
 
-						<button class="text-green-500 capitalize font-bold tracking-normal hover:tracking-wide  ease-in duration-300">
-							<Link href={"/solutions"} className="flex items-center gap-1 ">
+						<button class="text-green-500 capitalize font-bold ">
+							<Link href={"/solutions"} className="flex items-center gap-1 tracking-normal hover:tracking-wide  ease-in duration-300 ">
 								<span>View all solutions</span>{" "}
 								<IoIosArrowForward className="font-bold " />
 							</Link>
@@ -39,10 +39,10 @@ const Explore = () => {
 								<h2 class="title uppercase">{cardData.name}</h2>
 								<p class="copy">{cardData.desc}</p>
 
-								<button class="text-green-500 tracking-normal hover:tracking-wider ease-in duration-300 ">
+								<button class="text-green-500 ">
 									<Link
 										href={`${cardData.path}`}
-										className="flex items-center gap-1 "
+										className="flex items-center gap-1  tracking-normal hover:tracking-wider ease-in duration-300"
 									>
 										<span>Learn More</span>{" "}
 										<IoIosArrowForward className="font-bold " />

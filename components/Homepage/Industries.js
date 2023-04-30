@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
+
 // import required modules
 import { EffectFade, Navigation, Autoplay } from "swiper";
 import { industriesData, slideData } from "../sharedPage/StaticData";
